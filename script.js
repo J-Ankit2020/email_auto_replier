@@ -15,7 +15,7 @@ const SCOPES = [
 ];
 
 // i kept the label name
-const labelName = 'Auto Reply';
+const labelName = 'Vacation Auto-Reply';
 
 app.get('/', async (req, res) => {
   // here i am taking google GMAIL  authentication
@@ -116,7 +116,7 @@ app.get('/', async (req, res) => {
                     }\r\n` +
                     `Content-Type: text/plain; charset="UTF-8"\r\n` +
                     `Content-Transfer-Encoding: 7bit\r\n\r\n` +
-                    `Thank you for the email . I'm currently on vacation and will reply to you when I return.\r\n`
+                    `Thank you for the email I'm currently on vacation and will reply to you when I return.\r\n`
                 ).toString('base64'),
               },
             };
